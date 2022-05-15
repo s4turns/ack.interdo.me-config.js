@@ -68,6 +68,27 @@ var config = {
         // callStatsThreshold: 5 // enable callstats for 5% of the users.
     },
 
+    // Feature Flags.
+    flags: {
+        // Enables source names in the signaling.
+        sourceNameSignaling: true,
+
+        // Enables sending multiple video streams, i.e., camera and desktop tracks can be shared in the conference
+        // separately as two different streams instead of one composite stream.
+        sendMultipleVideoStreams: true
+    },
+    
+    screenshotCapture : {
+    //      Enables the screensharing capture feature.
+        enabled: true,
+    //
+    //      The mode for the screenshot capture feature.
+    //      Can be either 'recording' - screensharing screenshots are taken
+    //      only when the recording is also on,
+    //      or 'always' - screensharing screenshots are always taken.
+    //      mode: 'recording'
+    },
+    
     // Disables ICE/UDP by filtering out local and remote UDP candidates in
     // signalling.
     // webrtcIceUdpDisable: false,
