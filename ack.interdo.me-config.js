@@ -826,7 +826,6 @@ var config = {
 
     // no configuration value should follow this line.
 useNewBandwidthAllocationStrategy: false
-// disableTileEnlargement: true,
 
 };
 
