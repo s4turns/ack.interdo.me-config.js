@@ -75,19 +75,19 @@ var config = {
 
         // Enables sending multiple video streams, i.e., camera and desktop tracks can be shared in the conference
         // separately as two different streams instead of one composite stream.
-        sendMultipleVideoStreams: true
+        sendMultipleVideoStreams: false
     },
     
-    screenshotCapture : {
+    //screenshotCapture : {
     //      Enables the screensharing capture feature.
-        enabled: true,
+    //    enabled: true,
     //
     //      The mode for the screenshot capture feature.
     //      Can be either 'recording' - screensharing screenshots are taken
     //      only when the recording is also on,
     //      or 'always' - screensharing screenshots are always taken.
     //      mode: 'recording'
-    },
+    // },
     
     // Disables ICE/UDP by filtering out local and remote UDP candidates in
     // signalling.
@@ -711,7 +711,7 @@ var config = {
     // If true, tile view will not be enabled automatically when the participants count threshold is reached.
     disableTileView: false,
     useNewBandwidthAllocationStrategy: false
-    
+	
     // Hides the conference subject
     // hideConferenceSubject: true,
 
@@ -854,4 +854,3 @@ var config = {
 };
 
 /* eslint-enable no-unused-vars, no-var */
-
