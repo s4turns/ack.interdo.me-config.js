@@ -710,7 +710,8 @@ var config = {
 
     // If true, tile view will not be enabled automatically when the participants count threshold is reached.
     disableTileView: false,
-
+    useNewBandwidthAllocationStrategy: false
+    
     // Hides the conference subject
     // hideConferenceSubject: true,
 
@@ -849,7 +850,6 @@ var config = {
     // makeJsonParserHappy: 'even if last key had a trailing comma'
 
     // no configuration value should follow this line.
-useNewBandwidthAllocationStrategy: false
 
 };
 
