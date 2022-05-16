@@ -67,17 +67,7 @@ var config = {
         // the callstats to be enabled.
         // callStatsThreshold: 5 // enable callstats for 5% of the users.
     },
-
-    // Feature Flags.
-    flags: {
-        // Enables source names in the signaling.
-        sourceNameSignaling: true,
-
-        // Enables sending multiple video streams, i.e., camera and desktop tracks can be shared in the conference
-        // separately as two different streams instead of one composite stream.
-        sendMultipleVideoStreams: false
-    },
-    
+   
     //screenshotCapture : {
     //      Enables the screensharing capture feature.
     //    enabled: true,
@@ -102,7 +92,7 @@ var config = {
     //
 
     // Enable unified plan implementation support on Chromium based browsers.
-    enableUnifiedOnChrome: true,
+    // enableUnifiedOnChrome: true,
 
     // Audio
 
