@@ -81,7 +81,7 @@ var config = {
     
     // Disables ICE/UDP by filtering out local and remote UDP candidates in
     // signalling.
-    // webrtcIceUdpDisable: true,
+    webrtcIceUdpDisable: true,
 
     // Disables ICE/TCP by filtering out local and remote TCP candidates in
     // signalling.
@@ -134,7 +134,7 @@ var config = {
     // Sets the preferred target bitrate for the Opus audio codec by setting its
     // 'maxaveragebitrate' parameter. Currently not available in p2p mode.
     // Valid values are in the range 6000 to 510000
-    opusMaxAverageBitrate: 480000,
+    opusMaxAverageBitrate: 48000,
 
     // Enables support for opus-red (redundancy for Opus).
     enableOpusRed: false,
