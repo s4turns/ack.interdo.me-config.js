@@ -42,11 +42,11 @@ var config = {
     testing: {
         // Disables the End to End Encryption feature. Useful for debugging
         // issues related to insertable streams.
-        disableE2EE: true,
+        disableE2EE: false,
 
         // P2P test mode disables automatic switching to P2P when there are 2
         // participants in the conference.
-        p2pTestMode: false,
+        p2pTestMode: true,
 
         // Enables the test specific features consumed by jitsi-meet-torture
         // testMode: false
@@ -97,8 +97,8 @@ var config = {
     // Audio
 
     // Disable measuring of audio levels.
-    disableAudioLevels: false,
-    audioLevelsInterval: 200,
+    // disableAudioLevels: false,
+    // audioLevelsInterval: 200,
 
     // Enabling this will run the lib-jitsi-meet no audio detection module which
     // will notify the user if the current selected microphone has no audio
@@ -157,7 +157,7 @@ var config = {
     constraints: {
          video: {
              height: {
-                 ideal: 1080,
+                 ideal: 720,
                  max: 1080,
                  min: 720
              }
@@ -237,7 +237,7 @@ var config = {
     // Misc
 
     // Default value for the channel "last N" attribute. -1 for unlimited.
-    channelLastN: -1,
+    channelLastN: 4,
 
     // Provides a way to use different "last N" values based on the number of participants in the conference.
     // The keys in an Object represent number of participants and the values are "last N" to be used when number of
@@ -498,7 +498,7 @@ var config = {
         // through the JVB and use the peer to peer connection instead. When a
         // 3rd participant joins the conference will be moved back to the JVB
         // connection.
-        enabled: true,
+        enabled: false,
 
         // The STUN servers that will be used in the peer to peer connections
         stunServers: [
