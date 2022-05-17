@@ -146,7 +146,7 @@ var config = {
 
     // How many participants while in the tile view mode, before the receiving video quality is reduced from HD to SD.
     // Use -1 to disable.
-    maxFullResolutionParticipants: -1,
+    maxFullResolutionParticipants: 6,
     disableTileEnlargement: true,
 
     // w3c spec-compliant video constraints to use for video capture. Currently
@@ -222,7 +222,7 @@ var config = {
     // Whether to show the possibility to share file recording with other people
     // (e.g. meeting participants), based on the actual implementation
     // on the backend.
-    fileRecordingsServiceSharingEnabled: false,
+    fileRecordingsServiceSharingEnabled: true,
 
     // Whether to enable live streaming or not.
     liveStreamingEnabled: true,
@@ -259,7 +259,7 @@ var config = {
     // 'SelectedEndpointsChangedEvent' and 'ReceiverVideoConstraint' into the new 'ReceiverVideoConstraints' message
     // that invokes the new bandwidth allocation algorithm in the bridge which is described here
     // - https://github.com/jitsi/jitsi-videobridge/blob/master/doc/allocation.md.
-    // useNewBandwidthAllocationStrategy: false,
+    useNewBandwidthAllocationStrategy: false,
 
     // Specify the settings for video quality optimizations on the client.
     // videoQuality: {
@@ -700,7 +700,6 @@ var config = {
 
     // If true, tile view will not be enabled automatically when the participants count threshold is reached.
     disableTileView: false,
-    useNewBandwidthAllocationStrategy: false
 	
     // Hides the conference subject
     // hideConferenceSubject: true,
