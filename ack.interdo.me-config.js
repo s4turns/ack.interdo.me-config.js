@@ -42,11 +42,11 @@ var config = {
     testing: {
         // Disables the End to End Encryption feature. Useful for debugging
         // issues related to insertable streams.
-        disableE2EE: false,
+        disableE2EE: true,
 
         // P2P test mode disables automatic switching to P2P when there are 2
         // participants in the conference.
-        p2pTestMode: true,
+        p2pTestMode: false,
 
         // Enables the test specific features consumed by jitsi-meet-torture
         // testMode: false
@@ -137,7 +137,7 @@ var config = {
     opusMaxAverageBitrate: 48000,
 
     // Enables support for opus-red (redundancy for Opus).
-    enableOpusRed: false,
+    enableOpusRed: true,
 
     // Video
 
@@ -154,15 +154,15 @@ var config = {
     // util#browser#usesNewGumFlow. The constraints are independent from
     // this config's resolution value. Defaults to requesting an ideal
     // resolution of 720p.
-    constraints: {
-         video: {
-             height: {
-                 ideal: 720,
-                 max: 1080,
-                 min: 720
-             }
-         }
-     },
+    //constraints: {
+    //     video: {
+    //        height: {
+    //             ideal: 720,
+    //             max: 1080,
+    //             min: 720
+    //         }
+    //    }
+    // },
 
     // Enable / disable simulcast support.
     disableSimulcast: true,
@@ -193,10 +193,10 @@ var config = {
     // Desktop sharing
 
     // Optional desktop sharing frame rate options. Default value: min:5, max:5.
-     desktopSharingFrameRate: {
-     min: 30,
-     max: 60
-     },
+    // desktopSharingFrameRate: {
+    // min: 30,
+    // max: 60
+    //  },
 
     // Try to start calls with screen-sharing instead of camera video.
     // startScreenSharing: true,
@@ -229,7 +229,7 @@ var config = {
 
     // Transcription (in interface_config,
     // subtitles and buttons can be configured)
-    transcribingEnabled: true,
+    transcribingEnabled: false,
 
     // Enables automatic turning on captions when recording is started
     // autoCaptionOnRecord: false,
@@ -237,7 +237,7 @@ var config = {
     // Misc
 
     // Default value for the channel "last N" attribute. -1 for unlimited.
-    channelLastN: 4,
+    channelLastN: -1,
 
     // Provides a way to use different "last N" values based on the number of participants in the conference.
     // The keys in an Object represent number of participants and the values are "last N" to be used when number of
@@ -281,23 +281,23 @@ var config = {
     //    // are the max.bitrates to be set on that particular type of stream. The actual send may vary based on
     //    // the available bandwidth calculated by the browser, but it will be capped by the values specified here.
     //    // This is currently not implemented on app based clients on mobile.
-      maxBitratesVideo: {
-              H264: {
-                  low: 200000,
-                  standard: 500000,
-                  high: 1500000
-              },
-              VP8 : {
-                  low: 200000,
-                  standard: 500000,
-                  high: 1500000
-              },
-              VP9: {
-                  low: 100000,
-                  standard: 300000,
-                  high:  1500000
-              }
-        },
+      // maxBitratesVideo: {
+              // H264: {
+                  // low: 200000,
+                  // standard: 500000,
+                  // high: 1500000
+              // },
+              // VP8 : {
+                  // low: 200000,
+                  // standard: 500000,
+                  // high: 1500000
+              // },
+              // VP9: {
+                  // low: 100000,
+                  // standard: 300000,
+                  // high:  1500000
+              // }
+        // },
     //    // The options can be used to override default thresholds of video thumbnail heights corresponding to
     //    // the video quality levels used in the application. At the time of this writing the allowed levels are:
     //    //     'low' - for the low quality level (180p at the time of this writing)
