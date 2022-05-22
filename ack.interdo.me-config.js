@@ -680,18 +680,18 @@ var config = {
     // enableLipSync: false
 
     // {
-    //     backgroundColor: '#000',
-    //     // The url for the image used as background
-    //     backgroundImageUrl: 'https://i.imgur.com/kniJo56.png',
-    //     // The anchor url used when clicking the logo image
-    //     logoClickUrl: 'ack.interdo.me',
-    //     // The url used for the image used as logo
-    //     logoImageUrl: 'https://i.imgur.com/1e3G4em.png'
+         // backgroundColor: '#000',
+         // The url for the image used as background
+    backgroundImageUrl: 'https://7.interdo.me/s/kBeRXcZkHsHMicc/download/683980.png',
+         // The anchor url used when clicking the logo image
+    logoClickUrl: 'https://ack.interdo.me',
+         // The url used for the image used as logo
+    logoImageUrl: 'https://7.interdo.me/s/5LFtyiPePSG3PNH/download/201337.9.png',
     //  },
-    // dynamicBrandingUrl: '',
+    dynamicBrandingUrl: 'https://ack.interdo.me',
 
     // Sets the background transparency level. '0' is fully transparent, '1' is opaque.
-    // backgroundAlpha: 1,
+    backgroundAlpha: 1,
 
     // The URL of the moderated rooms microservice, if available. If it
     // is present, a link to the service will be rendered on the welcome page,
