@@ -498,7 +498,7 @@ var config = {
         // through the JVB and use the peer to peer connection instead. When a
         // 3rd participant joins the conference will be moved back to the JVB
         // connection.
-        enabled: false,
+        enabled: true,
 
         // The STUN servers that will be used in the peer to peer connections
         stunServers: [
